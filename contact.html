@@ -1,0 +1,206 @@
+<html>
+<head>
+  <title>strryies - Contact Me</title>
+  <style>
+  
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f7f3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-image: url('banner-1.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 1px solid #ddd;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-family: Georgia, serif;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    header nav {
+      margin-top: 20px;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1em;
+      color: #fff;
+    }
+
+    header nav a:hover {
+      color: #725947;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #5c4033;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3e2a22;
+    }
+
+    .inline {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f8f7f3;
+      margin-top: 20px;
+    }
+
+    .footer-box {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      background-color: #5c4033;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <p>Let's begin a conversation. If you have any questions, don't hesitate to reach out via email.</p>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">Contact Me</h1>
+
+    <form method="post" action="mailto:ainasyafioq4h@gmail.com" enctype="text/plain">
+      <div class="container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="container">
+        <label>Marital Status:</label>
+        <div class="options">
+          <div class="inline">
+            <input type="checkbox" id="single" name="status" value="single">
+            <label for="single">Single</label>
+          </div>
+          <div class="inline">
+            <input type="checkbox" id="married" name="status" value="married">
+            <label for="married">Married</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+          <option value="Sel">Selangor</option>
+          <option value="WP">Wilayah Persekutuan</option>
+          <option value="N9">Negeri Sembilan</option>
+          <option value="Mel">Melaka</option>
+          <option value="Jo">Johor</option>
+          <option value="Kel">Kelantan</option>
+          <option value="Ter">Terengganu</option>
+          <option value="Pah">Pahang</option>
+          <option value="PP">Pulau Pinang</option>
+          <option value="Ked">Kedah</option>
+          <option value="Per">Perak</option>
+          <option value="Perlis">Perlis</option>
+          <option value="Sab">Sabah</option>
+          <option value="Sar">Sarawak</option>
+        </select>
+      </div>
+
+      <div class="container">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="container">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="container">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+
+ <!-- Footer Section -->
+    <footer>
+        <div class="footer-box">
+            <p>&copy; 2024 strryies | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
